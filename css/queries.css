@@ -1,0 +1,106 @@
+@media (max-width: 640px) {
+  .navigation {
+    display: none;
+  }
+  .menu-nav {
+    display: none;
+  }
+  .primary-header {
+    font-size: 3rem;
+  }
+  .text {
+    font-size: 1.4rem;
+  }
+  .logo-container {
+    display: flex;
+    justify-content: start;
+    margin-bottom: 3rem;
+  }
+  .hero-content,
+  .section-gtid,
+  .footer-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .section-hero {
+    margin-bottom: 0;
+  }
+
+  .hero-content-picture {
+    grid-column: 2;
+  }
+  .hero-content-text {
+    grid-column: 1;
+    margin-top: 20rem;
+    padding: 10rem;
+    text-align: center;
+  }
+  .text-secondary {
+    margin-bottom: 30rem;
+  }
+
+  .hero-image {
+    width: 50rem;
+    height: 50rem;
+    right: 5rem;
+    top: 0;
+  }
+
+  .section-art {
+    height: 100rem;
+    border-radius: 0 20rem;
+    margin-bottom: 35rem;
+  }
+
+  .phone-img {
+    width: 100%;
+    left: 2rem;
+  }
+  .art-content {
+    margin-bottom: 50rem;
+  }
+
+  .art-content h3,
+  p {
+    margin-top: 5rem;
+    text-align: center;
+    font-size: 6rem;
+  }
+
+  .logo-footer {
+    margin-bottom: 5rem;
+  }
+
+  .list,
+  .header-list {
+    display: grid;
+    place-items: center; /* центрира хоризонтално и вертикално */
+    text-align: center;
+  }
+  .header-list {
+    margin-bottom: 1rem;
+  }
+  .list {
+    margin-bottom: 3rem;
+  }
+  .list li {
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 1280px) {
+}
+
+/*@media (min-width: 768px) { 
+    
+  }
+
+ media (min-width: 1024px) {
+    
+  }
+
+
+
+@media (min-width: 1536px) { 
+    
+ }*/

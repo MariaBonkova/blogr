@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+
+  /*когато сложим за мобилното меню трансформ-тразнишън започва да се склорва екрана на ляво и така го премахва скролването */
+  /*това се отнася след това до оразмеряването с rem. 1rem=10px */
+}
+
+.header {
+  max-width: 100%;
+  margin-inline: auto;
+  margin-bottom: 9.6rem;
+  padding: 5rem 15rem;
+  border-radius: 0 0 0 10rem;
+  background-image: url("/blogr-landing-page-main/images/bg-pattern-intro-desktop.svg"),
+    /* втори фон, сега е най-отгоре */
+      linear-gradient(to right, rgba(255, 143, 112, 1), rgba(255, 61, 84, 1)); /* първи фон, сега е отзад */
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 20rem;
+}
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10rem;
+}
+
+.main-nav {
+  list-style: none;
+  display: flex;
+  gap: 5rem;
+  align-items: end;
+}
+.main-nav a:link,
+.main-nav a:visited {
+  color: #e8e8e8;
+  opacity: 0.9;
+  text-decoration: none;
+  font-family: "Overpass", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+}
+.main-nav a:hover,
+.main-nav a:active {
+  color: #4b5862;
+}
+.header-content {
+  margin: 0 auto;
+  text-align: center;
+  color: #fcfcfc;
+}
+.primary-header {
+  font-size: 5rem;
+  font-weight: 300;
+  margin-bottom: 3rem;
+}
+.text {
+  font-size: 1.6rem;
+  margin-bottom: 3rem;
+  line-height: 1.8;
+}
+.btns {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 10rem;
+}
+.btn {
+  font-size: 1.6rem;
+
+  font-weight: 700;
+  border: none;
+  border-radius: 20rem;
+  background: #fcfcfc;
+  padding: 1rem 2rem;
+  cursor: pointer;
+}
+.btn-singup {
+  padding: 1rem 3rem;
+}
+.btn-white {
+  color: #ff3d54ff;
+}
+.btn-empty {
+  background: none;
+  border: solid 1px #fcfcfc;
+  color: #fcfcfc;
+}
+
+/*section-hero*/
+.section-hero {
+  max-width: 100%;
+  margin-bottom: 20rem;
+}
+
+.hero-content-text {
+  max-width: 100%;
+  padding-left: 15rem;
+  position: relative;
+}
+
+.text-secondary {
+  font-size: 4.5rem;
+  font-weight: 300;
+  color: #1f3f5bff;
+  text-align: center;
+  margin-bottom: 10rem;
+}
+.text-tertiary {
+  font-size: 4rem;
+  font-weight: 300;
+  margin-bottom: 5rem;
+  color: #1f3f5bff;
+}
+.dark {
+  color: rgb(157, 172, 183);
+}
+
+.hero-content-picture {
+  position: relative;
+}
+.hero-image {
+  position: absolute;
+  right: -25rem; /* край на секцията */
+  top: 40%; /* центриране по вертикала */
+  transform: translateY(-50%);
+}
+
+/*section-art*/
+
+.section-art {
+  height: 40rem;
+  background-color: #3d3f61ff;
+  border-radius: 0 10rem;
+  margin-bottom: 25rem;
+}
+.art-picture {
+  height: 40rem;
+  background-image: url("/blogr-landing-page-main/images/bg-pattern-circles.svg"),
+    /* втори фон, сега е най-отгоре */
+      linear-gradient(to right, #2c2d3fff, #3d3f61ff); /* първи фон, сега е отзад */
+  background-size: cover;
+  background-position: bottom;
+  border-radius: 0 0 0 10rem;
+  position: relative;
+}
+.phone-img {
+  width: 70%;
+  position: absolute;
+  left: 20rem;
+  transform: translateY(-10%);
+}
+.art-content {
+  justify-content: center; /* хоризонтално центриране */
+  align-items: center;
+  margin-top: 2rem;
+  padding: 10rem;
+}
+.white {
+  color: #e8e8e8;
+}
+
+/* section-hero-reverse*/
+.left {
+  position: absolute;
+  right: 6rem; /* край на секцията */
+  top: 40%; /* центриране по вертикала */
+  transform: translateY(-50%);
+}
+.reverse {
+  padding: 0 10rem 0 0;
+  margin-bottom: 5rem;
+}
+/*footer*/
+.footer {
+  background-color: #25252dff;
+  padding: 7rem 5rem;
+  border-radius: 0 10rem 0 0;
+  cursor: pointer;
+  margin-top: 15rem;
+}
+.logo-footer {
+  padding-left: 22rem;
+}
+.header-list {
+  color: #fcfcfc;
+  font-size: 1.4rem;
+  font-weight: 300;
+  margin-bottom: 3rem;
+}
+.list li {
+  font-size: 1.2rem;
+  list-style: none;
+  line-height: 3;
+  letter-spacing: 1px;
+}
+.list li a:link,
+.list li a:visited {
+  color: #d4dee5;
+  text-decoration: none;
+}
+.list li a:hover,
+.list li a:active {
+  color: #ff8f70ff;
+}
