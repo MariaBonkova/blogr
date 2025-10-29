@@ -1,10 +1,34 @@
-@media (max-width: 640px) {
-  .navigation {
-    display: none;
+@media (max-width: 768px) {
+
+  .nav-menu  {
+   display: none;
+      position: fixed;
+      flex-direction: column;
+      justify-content: center;
+
+      gap: 3rem;
+      width: 100%;
+      height:20%;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 2rem;
+      box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+      overflow-y: auto;
+      z-index: 1000;
   }
-  .menu-nav {
-    display: none;
+  .hamburger{
+      display: flex;
+     justify-content: end;
+     cursor: pointer;
   }
+    .menu-toggle:checked ~ .nav-menu {
+        display: block;
+    }
+    .menu-toggle:checked {
+        content: "✕"; /* знак за затваряне */
+        position: relative;
+        left: 10rem;
+        top: 0;
+    }
   .primary-header {
     font-size: 3rem;
   }
@@ -17,13 +41,14 @@
     margin-bottom: 3rem;
   }
   .hero-content,
-  .section-gtid,
+  .section-grid,
+  .section-art,
   .footer-grid {
     grid-template-columns: 1fr !important;
   }
 
   .section-hero {
-    margin-bottom: 0;
+    margin-bottom: 10rem;
   }
 
   .hero-content-picture {
@@ -36,36 +61,73 @@
     text-align: center;
   }
   .text-secondary {
-    margin-bottom: 30rem;
+    margin-bottom: 5rem;
   }
 
   .hero-image {
-    width: 50rem;
-    height: 50rem;
-    right: 5rem;
-    top: 0;
+      display: flex;
+      justify-content: center; /* хоризонтално центриране */
+      align-items: center;    /* вертикално центриране */
+      height: 100vh;
+
   }
 
-  .section-art {
-    height: 100rem;
-    border-radius: 0 20rem;
-    margin-bottom: 35rem;
-  }
+    .section-grid {
+        background-color:  #3d3f61ff;
+        margin-top: 0;
+        border-radius: 0 0 0 10rem;
+        padding-bottom: 0;
+    }
 
-  .phone-img {
-    width: 100%;
-    left: 2rem;
-  }
+    .art-content {
+        justify-content: center; /* хоризонтално центриране */
+        align-items: center;
+        margin-top:0;
+        padding:0;
+
+    }
+    .art-picture {
+        border-radius: 0 10rem  0 0;
+    }
+    .phone-img {
+        left: 5rem;
+        bottom: 4rem;
+
+    }
+
+.white{
+    font-size: 1.4rem;
+    padding:0 5rem ;
+}
+    .art-picture {
+        border-radius: 0 10rem 0 0;
+    }
+
   .art-content {
-    margin-bottom: 50rem;
+      border-radius: 0 0 0 10rem;
+      padding: 0 5rem ;
   }
 
   .art-content h3,
   p {
     margin-top: 5rem;
     text-align: center;
-    font-size: 6rem;
+    font-size: 5rem;
   }
+
+  .down {
+      margin-top: 45rem;
+  }
+
+  .hero-image-{
+      display: flex;
+      justify-content: center; /* хоризонтално центриране */
+      align-items: center;    /* вертикално центриране */
+      height: 100vh;
+  }
+    .left {
+        right: -6rem; /* край на секцията */
+ }
 
   .logo-footer {
     margin-bottom: 5rem;
@@ -88,19 +150,56 @@
   }
 }
 
+
+
+@media (max-width: 640px) {
+    .phone-img {
+        left: 5rem;
+        bottom: 4rem;
+
+    }
+  }
+
 @media (max-width: 1280px) {
+    .nav-menu {
+        display: flex;
+    }
+    .hamburger{
+        display: none;
+    }
+    .hero-content,
+    .section-grid,
+    .section-art,
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .hero-image {
+        width:100%;
+        position: absolute;
+        right: -15rem; /* край на секцията */
+        top: 40%; /* центриране по вертикала */
+        transform: translateY(-50%);
+    }
+    .phone-img {
+        left: 5rem;
+        bottom: 4rem;
+    }
+    .text{
+        line-height: 1.34;
+    }
+    .footer-grid{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .logo-footer {
+        padding-left: 2rem;
+    }
+
+
+
 }
 
-/*@media (min-width: 768px) { 
-    
-  }
-
- media (min-width: 1024px) {
-    
-  }
 
 
-
-@media (min-width: 1536px) { 
+/*@media (min-width: 1536px) {
     
  }*/
