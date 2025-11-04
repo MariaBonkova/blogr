@@ -30,12 +30,20 @@ html {
   justify-content: space-between;
   margin-bottom: 10rem;
 }
+.hidden{
+    display: none;
+}
+.nav-menu{
+    max-width: 100%;
+    gap: 35rem;
+    justify-content: center;
+}
 
 .main-nav {
   list-style: none;
   display: flex;
   gap: 5rem;
-  align-items: end;
+  align-items: center;
 }
 .main-nav a:link,
 .main-nav a:visited {
