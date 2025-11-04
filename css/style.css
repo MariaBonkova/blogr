@@ -30,7 +30,8 @@ html {
   justify-content: space-between;
   margin-bottom: 10rem;
 }
-.hidden{
+.hamburger,
+.menu-toggle{
     display: none;
 }
 .nav-menu{

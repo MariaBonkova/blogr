@@ -26,11 +26,14 @@
   </head>
   <body>
     <header class="header container">
+        <nav class="navigation">
+
+            <input type="checkbox" id="menu-toggle" class="menu-toggle"  />
 
         <label for="menu-toggle" class="hamburger hidden">
-            <svg width="32" height="18" xmlns="http://www.w3.org/2000/svg"><g fill="#FFF" fill-rule="evenodd"><path d="M0 0h32v2H0zM0 8h32v2H0zM0 16h32v2H0z"/></g></svg></label> <!-- чертичката -->
-
-      <nav class="navigation">
+            <svg class="icon-open" width="32" height="18" xmlns="http://www.w3.org/2000/svg"><g fill="#FFF" fill-rule="evenodd"><path d="M0 0h32v2H0zM0 8h32v2H0zM0 16h32v2H0z"/></g></svg>
+            <svg class="icon-close" width="26" height="26" xmlns="http://www.w3.org/2000/svg"><path d="M23.607.98l1.414 1.413L14.414 13l10.607 10.607-1.414 1.414L13 14.414 2.393 25.021.98 23.607 11.586 13 .98 2.393 2.393.98 13 11.586 23.607.98z" fill="#FFF" fill-rule="evenodd"/></svg>
+        </label> <!-- чертичката -->
 
         <div class="logo-container">
           <img
@@ -39,10 +42,7 @@
             alt="logo"
           />
         </div>
-
-
           <div class="nav-menu grid grid-two-column">
-
         <ul class="main-nav">
           <li>
             <a href="#product">Product</a>
@@ -66,17 +66,12 @@
             />
           </li>
         </ul>
-
         <ul class="main-nav">
           <li><a href="#login">Login</a></li>
           <button class="btn btn-white btn-singup">Sing Up</button>
         </ul>
-
           </div>
-
-
       </nav>
-
 
       <div class="header-content">
         <h1 class="primary-header">A modern publishing platform</h1>
