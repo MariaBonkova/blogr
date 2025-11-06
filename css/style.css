@@ -28,13 +28,39 @@ html {
 .navigation {
   display: flex;
   justify-content: space-between;
+
   margin-bottom: 10rem;
 }
-.hamburger,
-.menu-toggle{
+.hamburger {
+    display: none;
+}
+/* Скриваме checkbox */
+input#menu-toggle {
+    display: none;
+}
+
+/* Лейбъл - бутон хамбургер */
+label.hamburger {
+    display: none; /* по подразбиране скрит */
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    user-select: none;
+}
+label.hamburger svg {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+    fill: #fff;
+}
+
+/* Иконките */
+.icon-close {
     display: none;
 }
 .nav-menu{
+    display: flex;
     max-width: 100%;
     gap: 35rem;
     justify-content: center;
