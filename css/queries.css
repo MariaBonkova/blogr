@@ -1,3 +1,11 @@
+
+@media (max-width: 640px) {
+    .phone-img {
+        left: 5rem;
+        bottom: 4rem;
+
+    }
+  }
 @media (max-width: 768px) {
     label.hamburger{
         display: block;
@@ -6,33 +14,34 @@
         align-items: center;
         width: 40px;
         height: 40px;
+        position: relative;
     }
     .icon-close{
         display: none;
+
     }
 
-  .nav-menu  {
-   display: none;
-      position: relative;
-      flex-direction: column;
-      justify-content: end;
-      gap: 3rem;
-      width: 100%;
-      height:20%;
-      background-color: rgba(0, 0, 0, 0.5);
-      padding: 2rem;
-      box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
-      overflow-y: auto;
-      z-index: 1000;
-  }
+    .nav-menu  {
+        display: none;
+        position: relative;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height:100%;
+        background-color: rgba(0, 0, 0, 0.3);
+
+        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+        overflow-y: auto;
+        z-index: 1000;
+    }
 
     .nav-menu ul {
-        flex-direction: column;
+        flex-direction: row;
         gap: 1.5rem;
-        align-items: flex-start;
+        align-items: center;
     }
     .btn-singup {
-        align-self: start;
+        align-self: center;
     }
 
     /* Покажи менюто при чекнат чекбокс */
@@ -46,61 +55,75 @@
     }
     #menu-toggle:checked + label .icon-close {
         display: block;
+
+
     }
 
     .logo{
-        width: 10rem;
-        height: 10rem;
+        width: 5rem;
+        height: 5rem;
     }
 
-  .primary-header {
-    font-size: 3rem;
-  }
-  .text {
-    font-size: 1.4rem;
-  }
-  .logo-container {
-    display: flex;
-    justify-content: start;
-    margin-bottom: 0.5rem;
-  }
-  .hero-content,
-  .section-grid,
-  .section-art,
-  .footer-grid {
-    grid-template-columns: 1fr !important;
-  }
+    .primary-header {
+        font-size: 3rem;
+    }
+    .text {
+        font-size: 1.4rem;
+    }
+    .logo-container {
+        display: flex;
+        justify-content: start;
+        margin-bottom: 0.5rem;
+    }
+    .hero-content,
+    .section-grid,
+    .section-art,
+    .footer-grid {
+        grid-template-columns: 1fr !important;
+    }
 
-  .section-hero {
-    margin-bottom: 10rem;
-  }
+    .section-hero > .text-secondary {
+        order: 1; /* Първо заглавието */
+        width: 100%;
+        text-align: center;
+        margin-bottom:30rem;
+    }
 
-  .hero-content-picture {
-    grid-column: 2;
-  }
-  .hero-content-text {
-    grid-column: 1;
-    margin-top: 20rem;
-    padding: 10rem;
-    text-align: center;
-  }
-  .text-secondary {
-    margin-bottom: 5rem;
-  }
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
-  .hero-image {
-      display: flex;
-      justify-content: center; /* хоризонтално центриране */
-      align-items: center;    /* вертикално центриране */
-      height: 100vh;
+    }
 
-  }
+    .hero-content-picture {
+        order: 2; /* Второ картинката */
+        position: relative;
+        right: 10rem; /* Премахни отместването */
+        top:3rem;
+        transform: none;
+        margin-bottom: 30rem;
+        width: 100%; /* регулирай ширината ако е нужно */
+        max-width: 600px;
+    }
+
+    .hero-content-text {
+        order: 3; /* Трето текста */
+        margin-top: 0;
+        width: 100%;
+        text-align: center;
+        padding: 0 10rem;
+    }
+    .text-secondary {
+        margin-bottom: 5rem;
+    }
+
 
     .section-grid {
         background-color:  #3d3f61ff;
         margin-top: 0;
         border-radius: 0 0 0 10rem;
-        padding-bottom: 0;
+        margin-bottom: 10rem;
     }
 
     .art-content {
@@ -112,6 +135,7 @@
     }
     .art-picture {
         border-radius: 0 10rem  0 0;
+        margin-top: 5rem;
     }
     .phone-img {
         left: 5rem;
@@ -119,70 +143,58 @@
 
     }
 
-.white{
-    font-size: 1.4rem;
-    padding:0 5rem ;
-}
+    .white{
+        font-size: 1.4rem;
+        padding:0 5rem ;
+    }
     .art-picture {
         border-radius: 0 10rem 0 0;
     }
 
-  .art-content {
-      border-radius: 0 0 0 10rem;
-      padding: 0 5rem ;
-  }
+    .art-content {
+        border-radius: 0 0 0 10rem;
+        padding: 0 5rem ;
+    }
 
-  .art-content h3,
-  p {
-    margin-top: 5rem;
-    text-align: center;
-    font-size: 5rem;
-  }
+    .art-content h3,
+    p {
+        margin-top: 5rem;
+        text-align: center;
+        font-size: 5rem;
+    }
 
-  .down {
-      margin-top: 45rem;
-  }
+    .down {
+        margin-top: 45rem;
+    }
 
-  .hero-image-{
-      display: flex;
-      justify-content: center; /* хоризонтално центриране */
-      align-items: center;    /* вертикално центриране */
-      height: 100vh;
-  }
-    .left {
-        right: -6rem; /* край на секцията */
- }
-
-  .logo-footer {
-    margin-bottom: 5rem;
-  }
-
-  .list,
-  .header-list {
-    display: grid;
-    place-items: center; /* центрира хоризонтално и вертикално */
-    text-align: center;
-  }
-  .header-list {
-    margin-bottom: 1rem;
-  }
-  .list {
-    margin-bottom: 3rem;
-  }
-  .list li {
-    line-height: 1.5;
-  }
-}
-
-
-
-@media (max-width: 640px) {
-    .phone-img {
-        left: 5rem;
-        bottom: 4rem;
+    .hero-content-picture {
+        background-color: red;
 
     }
-  }
+    .left {
+        right: -6rem; /* край на секцията */
+    }
+
+    .logo-footer {
+        margin-bottom: 5rem;
+    }
+
+    .list,
+    .header-list {
+        display: grid;
+        place-items: center; /* центрира хоризонтално и вертикално */
+        text-align: center;
+    }
+    .header-list {
+        margin-bottom: 1rem;
+    }
+    .list {
+        margin-bottom: 3rem;
+    }
+    .list li {
+        line-height: 1.5;
+    }
+}
 
 @media (max-width: 950px) {
     .nav-menu {
