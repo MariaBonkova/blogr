@@ -201,6 +201,13 @@
         gap: 5rem;
         padding:5rem 10rem;
     }
+    .hero-image {
+        position: absolute;
+        left: 0; /* край на секцията */
+        top: 50%; /* центриране по вертикала */
+        transform: translateY(50%);
+
+    }
 }
 
 @media (max-width: 1280px) {
